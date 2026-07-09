@@ -40,6 +40,8 @@ Warning:
     - Ensure no other processes are using the Bronze tables during execution.
 
 ===============================================================================
+code snippet aftr making the procedure 
+EXEC bronze.load_bronze 
 */
 
 -- THIS CREATES A PROCEDURE FOR THE WHOLE PROCESS AT ONCE ONLY FOREVER ( CHECK DATAWAREHOUSE>> PROGRAMIBILITY >> FUNCTIONS )
