@@ -25,9 +25,9 @@ Process:
 
 Author : Kumar Arpit
 Project: SQL Data Warehouse Project
+exec silver.load_silver 
 =============================================================
 */
-exec silver.load_silver 
 CREATE OR ALTER PROCEDURE silver.load_silver as 
 BEGIN
    DECLARE @start_time DATETIME , @end_time DATETIME , @batch_start_time datetime , @batch_end_time datetime ;
