@@ -246,6 +246,6 @@ BEGIN
 	  PRINT 'Error Message'  + CAST(ERROR_NUMBER() AS NVARCHAR ) ;
 	  PRINT 'Error Message' + cast(ERROR_STATE() AS NVARCHAR ) ;
 	  PRINT '--------------------------------------------'
- END CATCH
+ END CATCH 
 END
 
