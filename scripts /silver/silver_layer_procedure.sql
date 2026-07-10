@@ -1,20 +1,32 @@
-## Silver Layer ETL Stored Procedure
+/*
+=============================================================
+Stored Procedure: Load Silver Layer
+=============================================================
+Purpose:
+    Loads and transforms data from the Bronze layer into the
+    Silver layer by performing data cleansing, validation,
+    standardization, and business rule transformations.
 
-This stored procedure automates the loading of data from the **Bronze** layer into the **Silver** layer by performing data cleansing, validation, standardization, and transformation.
+Transformations Performed:
+    - Removes duplicate records
+    - Trims whitespace from text fields
+    - Standardizes categorical values
+    - Handles NULL and invalid values
+    - Validates and converts date fields
+    - Corrects inconsistent sales calculations
+    - Derives product end dates using window functions
+    - Cleans and normalizes ERP source data
 
-### Key Transformations
-- Removes duplicate customer records.
-- Trims leading and trailing spaces from text fields.
-- Standardizes categorical values (e.g., Gender, Marital Status, Product Line).
-- Replaces missing values with appropriate defaults.
-- Validates and converts date fields using `TRY_CONVERT()`.
-- Corrects invalid sales, price, and quantity calculations.
-- Derives product end dates using the `LEAD()` window function.
-- Cleans and standardizes ERP customer and location data.
-- Truncates target tables before each load to ensure a fresh, consistent dataset.
-- Logs execution time for individual table loads and the overall batch process.
+Process:
+    1. Truncate Silver tables.
+    2. Transform and validate Bronze data.
+    3. Load cleansed data into Silver tables.
+    4. Log execution time for each table and the overall batch.
 
-This procedure serves as the core ETL process for preparing clean, validated, and analytics-ready data in the Silver layer of the data warehouse.
+Author : Kumar Arpit
+Project: SQL Data Warehouse Project
+=============================================================
+*/
 exec silver.load_silver 
 CREATE OR ALTER PROCEDURE silver.load_silver as 
 BEGIN
