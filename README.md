@@ -62,9 +62,11 @@ The project follows the **Medallion Architecture**, a modern data engineering ap
 ## 📂 Architecture Diagram
 
 > Replace the image below after exporting your Draw.io diagram.
+> <img width="1321" height="722" alt="image" src="https://github.com/user-attachments/assets/94eb4310-2767-4d7e-b41c-e2d7e2838b9e" />
+
 
 ```markdown
-<img width="1325" height="800" alt="image" src="https://github.com/user-attachments/assets/f992a33b-84dd-443d-94df-eeefa51e7ccc" />
+
 
 ```
 
