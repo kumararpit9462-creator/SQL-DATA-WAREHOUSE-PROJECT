@@ -64,7 +64,8 @@ The project follows the **Medallion Architecture**, a modern data engineering ap
 > Replace the image below after exporting your Draw.io diagram.
 
 ```markdown
-![Architecture](docs/architecture.png)
+<img width="1325" height="800" alt="image" src="https://github.com/user-attachments/assets/f992a33b-84dd-443d-94df-eeefa51e7ccc" />
+
 ```
 
 ---
@@ -72,6 +73,8 @@ The project follows the **Medallion Architecture**, a modern data engineering ap
 # 🏛️ Data Warehouse Architecture
 
 The warehouse is divided into three logical layers.
+<img width="1057" height="675" alt="image" src="https://github.com/user-attachments/assets/888b8dab-9df8-4394-b4c2-5f3fee199601" />
+
 
 ## 🥉 Bronze Layer
 
@@ -132,6 +135,8 @@ The analytical warehouse follows a **Star Schema** consisting of Fact and Dimens
 ---
 
 # ⚙️ ETL Pipeline
+<img width="1316" height="747" alt="image" src="https://github.com/user-attachments/assets/6f941e78-0b3f-4eb0-b2af-19de6dc170a3" />
+
 
 The ETL process consists of the following stages:
 
@@ -244,8 +249,6 @@ sql-data-warehouse/
 
 Aspiring Data Analyst passionate about Data Engineering, SQL, Business Intelligence, and Analytics.
 
-- 💼 LinkedIn: *Add your LinkedIn URL*
-- 💻 GitHub: *Add your GitHub URL*
 
 ---
 
